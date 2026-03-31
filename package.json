@@ -1,0 +1,30 @@
+{
+  "name": "peptiko-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Peptiko — research-grade peptide catalog, pricing, reconstitution calculator, and availability in Moldova/CIS/EU",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "peptiko-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": ["mcp", "peptides", "research", "moldova", "catalog", "reconstitution"],
+  "author": "Peptiko <peptiko@protonmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0",
+    "tsx": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
