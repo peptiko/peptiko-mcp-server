@@ -3,8 +3,10 @@ startCommand:
   configSchema:
     type: object
     properties: {}
+    required: []
   commandFunction: |-
     (config) => ({
       command: 'node',
       args: ['dist/index.js'],
+      env: {}
     })

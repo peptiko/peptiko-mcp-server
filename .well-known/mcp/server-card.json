@@ -1,0 +1,45 @@
+{
+  "name": "peptiko-mcp-server",
+  "description": "MCP server for Peptiko — research-grade peptide catalog, reconstitution calculator, shipping info for Moldova/CIS/EU",
+  "version": "1.0.0",
+  "author": {
+    "name": "Peptiko",
+    "email": "peptiko@protonmail.com",
+    "url": "https://peptiko.xyz"
+  },
+  "transport": "stdio",
+  "tools": [
+    {
+      "name": "search_peptides",
+      "description": "Search the Peptiko peptide catalog by name, category, or keyword. Returns matching products with price, purity, and description."
+    },
+    {
+      "name": "get_product_details",
+      "description": "Get full details for a specific peptide including mechanism of action, storage, CAS number, available formats, and pricing."
+    },
+    {
+      "name": "reconstitution_calculator",
+      "description": "Calculate peptide reconstitution — draw volume, syringe units, and doses per vial based on vial size, water volume, and desired dose."
+    },
+    {
+      "name": "shipping_info",
+      "description": "Get Peptiko shipping rates, delivery times, and available regions. Ships from Moldova to CIS and EU countries."
+    },
+    {
+      "name": "list_categories",
+      "description": "List all peptide categories and the number of products in each."
+    }
+  ],
+  "resources": [
+    {
+      "uri": "peptiko://catalog",
+      "name": "Peptiko Catalog",
+      "description": "Complete Peptiko peptide catalog — all products with prices and descriptions"
+    },
+    {
+      "uri": "peptiko://compliance",
+      "name": "Compliance",
+      "description": "Peptiko RUO compliance and legal disclaimers"
+    }
+  ]
+}
