@@ -1,6 +1,6 @@
 {
   "name": "peptiko-mcp-server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MCP server for Peptiko — research-grade peptide catalog, pricing, reconstitution calculator, and availability in Moldova/CIS/EU",
   "type": "module",
   "main": "dist/index.js",

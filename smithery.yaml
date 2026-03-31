@@ -4,9 +4,10 @@ startCommand:
     type: object
     properties: {}
     required: []
+    additionalProperties: false
   commandFunction: |-
     (config) => ({
-      command: 'node',
-      args: ['dist/index.js'],
+      command: 'npx',
+      args: ['-y', 'peptiko-mcp-server@latest'],
       env: {}
     })
